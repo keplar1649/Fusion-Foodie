@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fusion Foodie | Home</title>
+  <link rel="shortcut icon" href="images/LOGO FF_page-0001.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&family=Arizonia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    html, body {
+      scroll-behavior: smooth;
+    }
+    .menu-section {
+      scroll-margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/LOGO FF_page-0001.jpg" alt="Fusion Foodie Logo">
+        Fusion Foodie
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <section class="hero-carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('images/hero image1.jpg');">
+          <div class="carousel-caption">
+            <h1>Welcome to Fusion Foodie</h1>
+            <p style="font-weight: bolder;">A Blend of Global Flavors in Dubai</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/hero image 2.jpg');">
+          <div class="carousel-caption">
+            <h1>Exquisite Dining Experience</h1>
+            <p style="font-weight: bolder;">Indulge in Our Signature Dishes</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/hero image 3.jpg');">
+          <div class="carousel-caption">
+            <h1>Fusion at Its Finest</h1>
+            <p style="font-weight: bolder;">Where East Meets West on Your Plate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 form-box">
+          <h4 class="form-title">Book Your Table</h4>
+          <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <input type="date" required>
+            <input type="time" required>
+            <select required>
+              <option value="" disabled selected>Number of Guests</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4+</option>
+            </select>
+            <button type="submit">Book Your Table Now</button>
+          </form>
+        </div>
+        <div class="col-md-7 about-text">
+          <h5 style="color: black;">About us</h5>
+          <h2 style="color: #ff6b00;">Welcome to <br>Fusion Foodie</h2>
+          <p>
+            At Fusion Foodie, we bring the world to your plate by blending global flavors with a touch of Dubai’s vibrant culinary scene. Our chefs craft each dish with passion, combining Eastern and Western traditions to create a dining experience that’s both unique and unforgettable. Join us for a journey of taste, where every bite tells a story.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Static Hero Section -->
+  <section class="menu-hero position-relative text-white text-center d-flex align-items-center justify-content-center" style="height: 50vh; overflow: hidden;">
+    <img src="images/hero image1.jpg" alt="Hero Background" class="position-absolute w-100 h-100 object-fit-cover" style="z-index: 0; filter: brightness(50%);">
+    <div class="position-relative z-1">
+      <h1 style="font-family: 'Arizonia', cursive; font-weight: bold; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">
+        From Our Kitchen to Your Heart
+      </h1>
+      <p style="font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: #ff6b00; font-weight: bolder; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">
+        Where East Meets West on Your Plate
+      </p>
+    </div>
+  </section>
+
+  <!-- Menu Cards Section -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <h2 class="menu-title">Our Menu</h2>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-card" onclick="location.href='pizza.html'">
+              <img src="images/Pizza menu main.jpg" alt="Pizza Menu">
+              <div class="menu-overlay">
+                <h3>Pizza</h3>
+                <p>Classic, Veggie, and more cheesy options.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-card" onclick="location.href='sandwiches.html'">
+              <img src="images/Sandwiches menu main.jpg" alt="Sandwich Menu">
+              <div class="menu-overlay">
+                <h3>Sandwiches</h3>
+                <p>Grilled, subs, and fusion delights.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-card" onclick="location.href='drinks.html'">
+              <img src="images/Cold coffee main menu.avif" alt="Drinks Menu">
+              <div class="menu-overlay">
+                <h3>Drinks</h3>
+                <p>Mocktails, juices, and refreshments.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-card" onclick="location.href='chat.html'">
+              <img src="images/pani puri main menu.jpg" alt="Chat Menu">
+              <div class="menu-overlay">
+                <h3>Chat Items</h3>
+                <p>Spicy, tangy street-style specials.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-card" onclick="location.href='burgers.html'">
+              <img src="images/burgers main menu.jpg" alt="Burger Menu">
+              <div class="menu-overlay">
+                <h3>Burgers</h3>
+                <p>Juicy patties with exotic toppings.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-card" onclick="location.href='desserts.html'">
+              <img src="images/fried rice main menu.jpg" alt="Desserts">
+              <div class="menu-overlay">
+                <h3>Rice</h3>
+                <p>Spicy Indian style rice dish which gives a tasty treat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-card" onclick="location.href='soups.html'">
+              <img src="images/Starter main menu.avif" alt="Soups">
+              <div class="menu-overlay">
+                <h3>Starters</h3>
+                <p>Hot starters which gives the fusion taste</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-card" onclick="location.href='wraps.html'">
+              <img src="images/veg wraps.jpg" alt="Wraps">
+              <div class="menu-overlay">
+                <h3>Wraps</h3>
+                <p>Flavour-packed wraps with fresh fillings.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="menu-card" onclick="location.href='biryani.html'">
+              <img src="images/Noodles.jpg" alt="Biryani">
+              <div class="menu-overlay">
+                <h3>Noodles</h3>
+                <p>Tasty noodle dishes with spicy blends.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!--Testimonals-->
+
+    <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<section class="testimonial-section">
+  <div class="overlay"></div>
+  <div class="content-container">
+    <h2><span class="testi" style="color: #ff6b00;">Testimony</span><br><strong>Happy Customer</strong></h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p>“Absolutely loved the fusion flavors! The ambience and presentation were top-notch.”</p>
+        </div>
+        <div class="swiper-slide">
+          <p>“One of the best dining experiences I’ve had in a long time. Highly recommended for food lovers!”</p>
+        </div>
+        <div class="swiper-slide">
+          <p>“The staff was friendly, and the food was simply delicious. Can’t wait to come back again!”</p>
+        </div>
+        <div class="swiper-slide">
+          <p>“From starters to desserts, everything was perfect. Loved the Tandoori Paneer!”</p>
+        </div>
+        <div class="swiper-slide">
+          <p>“A hidden gem! Beautiful presentation and unique taste combinations that really impressed me.”</p>
+        </div>
+      </div>
+
+      <!-- Pagination Dots -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+<style>
+.testimonial-section {
+  position: relative;
+  background: url('images/about us demo.jpg') center center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.testimonial-section .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.testimonial-section .content-container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  font-family: 'Arizonia', cursive;
+  margin-bottom: 40px;
+}
+
+.testimonial-section .testi {
+  color: #ff6b00;
+  font-size: 1.8rem;
+  font-family: 'Arizonia', cursive;
+}
+
+.swiper-slide p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding: 0 20px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-style: italic;
+  color: #f8f8f8;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff6b00;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .testimonial-section h2 {
+    font-size: 2rem;
+  }
+  .swiper-slide p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+</style>
+
+<!--Gallery section-->
+
+<section class="irregular-gallery">
+  <div class="container">
+    <h2 class="gallery-heading">Moments from Our Kitchen</h2>
+    <div class="irregular-grid">
+      <a href="images/Pizza menu main.jpg" class="glightbox" data-gallery="irregular" data-aos="fade-up">
+        <img src="images/Pizza menu main.jpg" alt="Dish 1">
+      </a>
+      <a href="images/Sandwiches menu main.jpg" class="glightbox" data-gallery="irregular" data-aos="fade-left">
+        <img src="images/Sandwiches menu main.jpg" alt="Dish 2">
+      </a>
+      <a href="images/Cold coffee main menu.avif" class="glightbox tall" data-gallery="irregular" data-aos="zoom-in">
+        <img src="images/Cold coffee main menu.avif" alt="Dish 3">
+      </a>
+      <a href="images/burgers main menu.jpg" class="glightbox wide" data-gallery="irregular" data-aos="fade-right">
+        <img src="images/burgers main menu.jpg" alt="Dish 4">
+      </a>
+      <a href="images/veg wraps.jpg" class="glightbox" data-gallery="irregular" data-aos="fade-up-right">
+        <img src="images/veg wraps.jpg" alt="Dish 5">
+      </a>
+      <a href="images/hero image1.jpg" class="glightbox tall" data-gallery="irregular" data-aos="zoom-in-down">
+        <img src="images/hero image1.jpg" alt="Dish 6">
+      </a>
+      <a href="images/fried rice main menu.jpg" class="glightbox wide" data-gallery="irregular" data-aos="fade-up-left">
+        <img src="images/fried rice main menu.jpg" alt="Dish 7">
+      </a>
+      <a href="images/about us demo.jpg" class="glightbox" data-gallery="irregular" data-aos="flip-left">
+        <img src="images/about us demo.jpg" alt="Dish 8">
+      </a>
+      <a href="images/Noodles.jpg" class="glightbox tall" data-gallery="irregular" data-aos="flip-up">
+        <img src="images/Noodles.jpg" alt="Dish 9">
+      </a>
+      <a href="images/Veggie delight pizza.jpg" class="glightbox wide" data-gallery="irregular" data-aos="zoom-in-up">
+        <img src="images/Veggie delight pizza.jpg" alt="Dish 10">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AOS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+<!-- GLightbox -->
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({ selector: '.glightbox' });
+</script>
+
+
+
+<!--Footer-->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-row">
+
+      <!-- About -->
+      <div class="footer-col about">
+        <h4 class="logo" style="font-family: 'Arizonia', cursive; font-size: xx-large;">Fusion Foodie</h4>
+        <p>Serving authentic Indian fusion cuisine with passion. Visit us for a unique dining experience in Dubai.</p>
+      </div>
+
+      <!-- Quick Links (Moved right) -->
+      <div class="footer-col quick-links">
+        <h4 style="font-family: 'Arizonia', cursive;font-size: xx-large;">Quick Links</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Hours -->
+      <div class="footer-col">
+        <h4 style="font-family: 'Arizonia', cursive;font-size: xx-large;">Opening Hours</h4>
+        <p>Mon – Fri: 10am – 10pm</p>
+        <p>Sat – Sun: 11am – 11pm</p>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4 style="font-family: 'Arizonia', cursive;font-size: xx-large;">Contact Us</h4>
+        <p>📍 Dubai, UAE</p>
+        <p>📞 +971-1234-5678</p>
+        <p>📧 info@fusionfoodie.com</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr />
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fusion Foodie. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <!-- Bootstrap & AOS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+      });
+    </script>
+</body>
+</html>

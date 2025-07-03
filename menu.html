@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fusion Foodie | Home</title>
+  <link rel="shortcut icon" href="images/LOGO FF_page-0001.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&family=Arizonia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/menu.css">
+  <style>
+    html, body {
+      scroll-behavior: smooth;
+    }
+    .menu-section {
+      scroll-margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/LOGO FF_page-0001.jpg" alt="Fusion Foodie Logo">
+        Fusion Foodie
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+    <section class="menu-hero position-relative text-white text-center d-flex align-items-center justify-content-center" style="height: 50vh; overflow: hidden;">
+        <img src="images/home menu bg.jpg" alt="Hero Background" class="position-absolute w-100 h-100 object-fit-cover" style="z-index: 0; filter: brightness(50%);">
+        
+        <div class="position-relative z-1">
+          <h1 style="
+            font-family: 'Arizonia', cursive;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeSlideInH1 1s ease-out forwards;
+          ">
+            From our kitchen to your heart
+          </h1>
+          
+          <p style="
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            color: #ff6b00 ;
+            font-weight: bolder;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeSlideInP 1.3s ease-out forwards;
+          ">
+            Where tradition meets innovation on every plate.
+          </p>
+        </div>
+      </section>
+
+      <style>
+      @keyframes fadeSlideInH1 {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeSlideInP {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      </style>
+
+<!-- Category Tabs -->
+<section class="custom-menu-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" style="font-family: 'Arizonia', cursive; font-size: xxx-large;">Our Menu</h2>
+
+    <!-- Category Tabs -->
+    <div class="d-flex justify-content-center gap-3 flex-wrap mb-5" id="menuCategories">
+      <button class="menu-tab active" onclick="filterMenu('pizza', this)">Pizza</button>
+      <button class="menu-tab active" onclick="filterMenu('drinks', this)">Drinks</button>
+      <button class="menu-tab active" onclick="filterMenu('sandwich', this)">Sandwiches</button>
+      <button class="menu-tab active" onclick="filterMenu('chaat', this)">Chaat</button>
+      <button class="menu-tab active" onclick="filterMenu('dessert', this)">Dessert</button>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="row" id="menuItems">
+      <!-- Pizza Category -->
+      <div class="col-md-6 mb-4 menu-card" data-category="pizza">
+        <div class="custom-card" data-aos="fade-up" data-aos-delay="0">
+          <img src="images/Pizza menu main.jpg" alt="Pizza">
+          <div class="card-info">
+            <h5>Classic Margherita</h5>
+            <span class="price">DHS 10</span>
+            <p>Simple and delicious cheese pizza</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 menu-card" data-category="pizza">
+        <div class="custom-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/hero image 3.jpg" alt="Pepperoni">
+          <div class="card-info">
+            <h5>Pepperoni Pizza</h5>
+            <span class="price">DHS 14</span>
+            <p>Spicy and meaty goodness</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 menu-card" data-category="pizza">
+        <div class="custom-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="images/Cheese pizza.jpg" alt="Cheese Pizza">
+          <div class="card-info">
+            <h5>Cheese Burst</h5>
+            <span class="price">DHS 12</span>
+            <p>Loaded with gooey cheese</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 menu-card" data-category="pizza">
+        <div class="custom-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="images/Veggie delight pizza.jpg" alt="Veggie Pizza">
+          <div class="card-info">
+            <h5>Veggie Delight</h5>
+            <span class="price">DHS 13</span>
+            <p>Fresh veggies on cheesy base</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 menu-card" data-category="pizza">
+        <div class="custom-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://source.unsplash.com/300x200/?pizza,spicy" alt="Spicy Pizza">
+          <div class="card-info">
+            <h5>Spicy Inferno</h5>
+            <span class="price">DHS 15</span>
+            <p>Hot and fiery pizza for spice lovers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks Category -->
+      <div class="col-md-6 mb-4 menu-card" data-category="drinks">
+        <div class="custom-card" data-aos="fade-up" data-aos-delay="0">
+          <img src="https://source.unsplash.com/300x200/?lassi" alt="Lassi">
+          <div class="card-info">
+            <h5>Mango Lassi</h5>
+            <span class="price">DHS 5</span>
+            <p>Refreshing mango yogurt drink</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 menu-card" data-category="drinks">
+        <div class="custom-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://source.unsplash.com/300x200/?juice,orange" alt="Orange Juice">
+          <div class="card-info">
+            <h5>Orange Juice</h5>
+            <span class="price">DHS 4</span>
+            <p>Freshly squeezed oranges</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 menu-card" data-category="drinks">
+        <div class="custom-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://source.unsplash.com/300x200/?juice,orange" alt="Orange Juice">
+          <div class="card-info">
+            <h5>Orange Juice</h5>
+            <span class="price">DHS 4</span>
+            <p>Freshly squeezed oranges</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 menu-card" data-category="drinks">
+        <div class="custom-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://source.unsplash.com/300x200/?juice,orange" alt="Orange Juice">
+          <div class="card-info">
+            <h5>Orange Juice</h5>
+            <span class="price">DHS 4</span>
+            <p>Freshly squeezed oranges</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 800, once: true });
+
+function filterMenu(category, button) {
+  const cards = document.querySelectorAll('.menu-card');
+  cards.forEach(card => {
+    card.style.display = card.getAttribute('data-category') === category ? 'block' : 'none';
+  });
+  const buttons = document.querySelectorAll('.menu-tab');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  button.classList.add('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const activeBtn = document.querySelector('.menu-tab.active');
+  if (activeBtn) filterMenu('pizza', activeBtn);
+});
+</script>
+
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--Footer-->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-row">
+
+      <!-- About -->
+      <div class="footer-col about">
+        <h4 class="logo" style="font-family: 'Arizonia', cursive; font-size: xx-large;">Fusion Foodie</h4>
+        <p>Serving authentic Indian fusion cuisine with passion. Visit us for a unique dining experience in Dubai.</p>
+      </div>
+
+      <!-- Quick Links (Moved right) -->
+      <div class="footer-col quick-links">
+        <h4 style="font-family: 'Arizonia', cursive;font-size: xx-large;">Quick Links</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Hours -->
+      <div class="footer-col">
+        <h4 style="font-family: 'Arizonia', cursive;font-size: xx-large;">Opening Hours</h4>
+        <p>Mon – Fri: 10am – 10pm</p>
+        <p>Sat – Sun: 11am – 11pm</p>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4 style="font-family: 'Arizonia', cursive;font-size: xx-large;">Contact Us</h4>
+        <p>📍 Dubai, UAE</p>
+        <p>📞 +971-1234-5678</p>
+        <p>📧 info@fusionfoodie.com</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr />
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fusion Foodie. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+</script>
